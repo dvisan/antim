@@ -22,6 +22,10 @@
     
 }
 
+.spacer {
+    width: 120px; /* same as logo width */
+}
+
 /* TITLE */
 .title  {
 	flex: 1;
