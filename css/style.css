@@ -46,6 +46,7 @@ header {
     background: #1e3a5f;
     color: white;
     padding: 20px 0;
+    padding-top: 10px;
     position: relative;   /* important */
     text-align: center;   /* centers title */
 }
