@@ -6,6 +6,24 @@
     font-family: Arial, sans-serif;
 }
 
+/* HEADER LAYOUT */
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* LOGO */
+.logo {
+    width: 50px;   /* adjust size */
+    height: auto;
+}
+
+/* TITLE */
+.title h1 {
+    margin-bottom: 5px;
+}
+
 /* GENERAL */
 body {
     line-height: 1.6;
