@@ -6,22 +6,21 @@
     font-family: Arial, sans-serif;
 }
 
-/* HEADER LAYOUT */
-.header-content {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
+
 
 /* LOGO */
 .logo {
-    width: 70px;   /* adjust size */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 120px;
     height: auto;
+    
 }
 
 /* TITLE */
 .title h1 {
-    margin-bottom: 5px;
+    text-align: center;
 }
 
 /* GENERAL */
@@ -41,7 +40,8 @@ header {
     background: #1e3a5f;
     color: white;
     padding: 20px 0;
-    text-align: center;
+    position: relative;   /* important */
+    text-align: center;   /* centers title */
 }
 
 /* NAV */
