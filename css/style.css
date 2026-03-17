@@ -6,7 +6,13 @@
     font-family: Arial, sans-serif;
 }
 
-
+@media (max-width: 600px) {
+    .logo {
+        position: static;        /* stop absolute positioning */
+        display: block;
+        margin: 0 auto 10px;     /* center logo */
+        width: 100px;
+    }
 
 /* LOGO */
 .logo {
