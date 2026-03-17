@@ -16,16 +16,15 @@
 
 /* LOGO */
 .logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    
     width: 120px;
     height: auto;
     
 }
 
 /* TITLE */
-.title h1 {
+.title  {
+	flex: 1;
     text-align: center;
 }
 
@@ -49,6 +48,12 @@ header {
     padding-top: 10px;
     position: relative;   /* important */
     text-align: center;   /* centers title */
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    
 }
 
 /* NAV */
