@@ -81,6 +81,12 @@ nav a {
     font-weight: bold;
 }
 
+nav a:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2); /* light white effect */
+    border-radius: 5px;
+}
+
 /* HERO */
 .hero {
     background: url('https://via.placeholder.com/1200x400') no-repeat center/cover;
