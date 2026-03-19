@@ -1,117 +1,267 @@
 <!DOCTYPE html>
+
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liceul Teologic Ortodox Sfântul Antim Ivireanul</title>
-    <link rel="stylesheet" href="css/style.css">
+
+
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        position: static;
+        display: block;
+        margin: 0 auto 10px;
+        width: 100px;
+    }
+}
+
+/* LOGO */
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+.spacer {
+    width: 120px;
+}
+
+/* TITLE */
+.title  {
+    flex: 1;
+    text-align: center;
+}
+
+/* GENERAL */
+body {
+    line-height: 1.6;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* HEADER */
+header {
+    background: #1e3a5f;
+    color: white;
+    padding: 20px 0;
+    padding-top: 10px;
+    position: relative;
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+}
+
+/* NAV */
+nav {
+    background: #2c5282;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* HERO */
+.hero {
+    background: url('https://via.placeholder.com/1200x400') no-repeat center/cover;
+    color: black;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* STRUCTURE */
+.structure {
+    padding: 40px 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-left: 5px solid #2c5282;
+}
+
+/* NEWS */
+.news {
+    background: #e2e8f0;
+    padding: 40px 0;
+}
+
+.news-item {
+    margin-bottom: 20px;
+}
+
+/* ABOUT */
+.about {
+    padding: 40px 0;
+}
+
+/* CONTACT */
+.contact {
+    background: #1e3a5f;
+    color: white;
+    padding: 40px 0;
+}
+
+/* FOOTER */
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+</style>
+
+
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <div class="container">
+
+<!-- HEADER -->
+<header>
+    <div class="container">
         <img src="img/cropped-sigla-antim-ivireanul.jpg" alt="Logo" class="logo">
         <div class="title">
             <h1>Liceul Teologic Ortodox</h1>
             <p>„Sfântul Antim Ivireanul”</p>
         </div>
-		<div class="spacer"></div>
+        <div class="spacer"></div>
+    </div>
+</header>
+
+<!-- NAVBAR -->
+<nav>
+    <ul class="container">
+        <li><a href="https://dvisan.github.io/antim">Acasă</a></li>
+        <li><a href="https://dvisan.github.io/antim/despre.html">Despre noi</a></li>
+        <li><a href="#">Structură</a></li>
+        <li><a href="#">Înscriere</a></li>
+        <li><a href="#">Activități</a></li>
+        <li><a href="#">Informații publice</a></li>
+        <li><a href="#">Noutăți</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <h2>Educație bazată pe valori creștin-ortodoxe</h2>
+        <p>Formăm caractere și cultivăm excelența.</p>
+    </div>
+</section>
+
+<!-- STRUCTURE -->
+<section class="structure container">
+    <h2>Structura învățământului</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Preșcolar</h3>
+            <p>Educație timpurie pentru cei mici.</p>
         </div>
-    </header>
 
-    <!-- NAVBAR -->
-    <nav>
-        <ul class="container">
-            <li><a href="https://dvisan.github.io/antim">Acasă</a></li>
-            <li><a href="https://dvisan.github.io/antim/despre.html">Despre noi</a></li>
-            <li><a href="#">Structură</a></li>
-			<li><a href="#">Înscriere</a></li>
-			<li><a href="#">Activități</a></li>
-			<li><a href="#">Informații publice</a></li>
-            <li><a href="#">Noutăți</a></li>
-            <li><a href="#">Contact</a></li>
-			
-        </ul>
-    </nav>
-
-    <!-- HERO -->
-    <section class="hero">
-        <div class="container">
-            <h2>Educație bazată pe valori creștin-ortodoxe</h2>
-            <p>Formăm caractere și cultivăm excelența.</p>
+        <div class="card">
+            <h3>Primar</h3>
+            <p>Formarea bazelor educaționale.</p>
         </div>
-    </section>
 
-    <!-- STRUCTURE -->
-    <section class="structure container">
-        <h2>Structura învățământului</h2>
-
-        <div class="cards">
-            <div class="card">
-                <h3>Preșcolar</h3>
-                <p>Educație timpurie pentru cei mici.</p>
-            </div>
-
-            <div class="card">
-                <h3>Primar</h3>
-                <p>Formarea bazelor educaționale.</p>
-            </div>
-
-            <div class="card">
-                <h3>Gimnazial</h3>
-                <p>Dezvoltarea competențelor esențiale.</p>
-            </div>
-
-            <div class="card">
-                <h3>Liceal</h3>
-                <p>Pregătire pentru viitor și vocație.</p>
-            </div>
+        <div class="card">
+            <h3>Gimnazial</h3>
+            <p>Dezvoltarea competențelor esențiale.</p>
         </div>
-    </section>
 
-    <!-- NEWS -->
-    <section class="news">
-        <div class="container">
-            <h2>Noutăți</h2>
-
-            <div class="news-item">
-                <h3>Rezultate admitere clasa a IX-a</h3>
-                <p>Vezi lista elevilor admiși pentru anul școlar curent.</p>
-            </div>
-
-            <div class="news-item">
-                <h3>Activități extracurriculare</h3>
-                <p>Descoperă proiectele și activitățile elevilor.</p>
-            </div>
+        <div class="card">
+            <h3>Liceal</h3>
+            <p>Pregătire pentru viitor și vocație.</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- ABOUT -->
-    <section class="about container">
-        <h2>Despre noi</h2>
-        <p>
-            Liceul Teologic Ortodox „Sfântul Antim Ivireanul” este o unitate de învățământ 
-            preuniversitar care promovează valori morale și educație de calitate.
-        </p>
-    </section>
+<!-- NEWS -->
+<section class="news">
+    <div class="container">
+        <h2>Noutăți</h2>
 
-    <!-- CONTACT -->
-    <section class="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Telefon: +40 356 179 440</p>
-            <p>Email: ltosfantim@gmail.com</p>
-            <p>Adresă: Timișoara, România</p>
+        <div class="news-item">
+            <h3>Rezultate admitere clasa a IX-a</h3>
+            <p>Vezi lista elevilor admiși pentru anul școlar curent.</p>
         </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Liceul Teologic Ortodox Sfântul Antim Ivireanul</p>
+        <div class="news-item">
+            <h3>Activități extracurriculare</h3>
+            <p>Descoperă proiectele și activitățile elevilor.</p>
         </div>
-    </footer>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about container">
+    <h2>Despre noi</h2>
+    <p>
+        Liceul Teologic Ortodox „Sfântul Antim Ivireanul” este o unitate de învățământ 
+        preuniversitar care promovează valori morale și educație de calitate.
+    </p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+    <div class="container">
+        <h2>Contact</h2>
+        <p>Telefon: +40 356 179 440</p>
+        <p>Email: ltosfantim@gmail.com</p>
+        <p>Adresă: Timișoara, România</p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Liceul Teologic Ortodox Sfântul Antim Ivireanul</p>
+    </div>
+</footer>
+```
 
 </body>
 </html>
